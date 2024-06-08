@@ -1,6 +1,3 @@
-const fs = require("fs");
+import generateName from "sillyname";
 
-fs.writeFile('generated.js',"console.log('this file was generated')",(err)=>{
-    if (err) throw err;
-    console.log("Your file has been saved succesfully");
-})
+console.log(`Hi! My name is ${generateName()}`)
